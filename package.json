@@ -1,0 +1,19 @@
+{
+  "name": "back-end-node--js-26226-entrega-final",
+  "version": "1.0.0",
+  "description": "Entrega final del curso de Back-End con Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dario-marranti/Back-End-Node--JS-26226-entrega-final.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dario-marranti/Back-End-Node--JS-26226-entrega-final/issues"
+  },
+  "homepage": "https://github.com/dario-marranti/Back-End-Node--JS-26226-entrega-final#readme"
+}
