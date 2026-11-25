@@ -1,10 +1,10 @@
 import { collection, getDocs, doc, getDoc, addDoc, deleteDoc } from "firebase/firestore";
 import { db } from "../config/firebase.js";
 
-const booksCollection = collection(db, "books");
+const productsCollection = collection(db, "products");
 
-export const getAllBooks = async () => {
-  const snapshot = await getDocs(booksCollection);
+export const getAllProducts = async () => {
+  const snapshot = await getDocs(productsCollection);
 
   return snapshot.docs.map((item) => ({
     ...item.data(),
@@ -12,8 +12,8 @@ export const getAllBooks = async () => {
   }));
 };
 
-export const getBookById = async (id) => {
-  const reference = doc(db, "books", id);
+export const getProductById = async (id) => {
+  const reference = doc(db, "products", id);
   const snapshot = await getDoc(reference);
 
   if (!snapshot.exists()) {
@@ -26,8 +26,8 @@ export const getBookById = async (id) => {
   };
 };
 
-export const createBook = async (data) => {
-  const reference = await addDoc(booksCollection, data);
+export const createProduct = async (data) => {
+  const reference = await addDoc(productsCollection, data);
 
   return {
     ...data,
@@ -35,8 +35,8 @@ export const createBook = async (data) => {
   };
 };
 
-export const deleteBook = async (id) => {
-  const reference = doc(db, "books", id);
+export const deleteProduct = async (id) => {
+  const reference = doc(db, "products", id);
 
   const snapshot = await getDoc(reference);
 
