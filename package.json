@@ -4,16 +4,32 @@
   "description": "Entrega final del curso de Back-End con Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "author": "Dario Marranti",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "express-validator": "^7.3.2",
+    "firebase": "^9.14.0",
+    "jsonwebtoken": "^9.0.3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dario-marranti/Back-End-Node--JS-26226-entrega-final.git"
   },
   "keywords": [],
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/dario-marranti/Back-End-Node--JS-26226-entrega-final/issues"
   },
-  "homepage": "https://github.com/dario-marranti/Back-End-Node--JS-26226-entrega-final#readme"
+  "homepage": "https://github.com/dario-marranti/Back-End-Node--JS-26226-entrega-final#readme",
+  "allowScripts": {
+    "@firebase/util@1.15.3": true,
+    "protobufjs@7.6.6": true
+  }
 }
