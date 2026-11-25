@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 
-import booksRouter from "./src/routes/books.router.js";
+import productsRouter from "./src/routes/products.router.js";
 import authRouter from "./src/routes/auth.router.js";
 
 const app = express();
@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
   res.send("API del curso funcionando");
 });
 
-app.use("/api/books", booksRouter);
+app.use("/api/products", productsRouter);
 app.use("/api/auth", authRouter);
 
 const PORT = 3000;
