@@ -3,3 +3,4 @@
 ## Instalación
 
 ## Paquetes
+npm i express cors dotenv firebase jsonwebtoken
