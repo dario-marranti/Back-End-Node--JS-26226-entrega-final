@@ -20,9 +20,19 @@ app.get("/", (req, res) => {
 
 app.use("/api/products", productsRouter);
 app.use("/api/auth", authRouter);
-
+/*
 const PORT = 3000;
 
 app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);
 });
+*/
+// Solo en local (fuera de Vercel)
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`http://localhost:${PORT}`);
+  });
+}
+
+export default app;
